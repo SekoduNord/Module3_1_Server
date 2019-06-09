@@ -5,6 +5,7 @@
  */
 package servs;
 
+import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 /**
@@ -12,11 +13,13 @@ import javax.jws.WebService;
  * @author Olivier
  */
 
-    @WebService(targetNamespace = "http://localhost:9090/Calculator")
+    @WebService(targetNamespace = "http://localhost:8084/Module31/Calculator")
             
         interface CalculatorInterface {
-               
+        
+        @WebMethod(operationName = "add")
         Double add(Double n1, Double n2);
+        @WebMethod(operationName = "sub")
         Double sub(Double n1, Double n2);
   
 }

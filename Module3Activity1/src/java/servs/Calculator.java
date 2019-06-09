@@ -13,7 +13,8 @@ import javax.jws.WebParam;
  *
  * @author Olivier
  */
-@WebService(serviceName = "Calculator")
+@WebService(serviceName = "Calculator",
+            endpointInterface = "servs.CalculatorInterface")
 
 public class Calculator implements CalculatorInterface {
 

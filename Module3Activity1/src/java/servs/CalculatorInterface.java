@@ -13,7 +13,7 @@ import javax.jws.WebService;
  * @author Olivier
  */
 
-    @WebService(targetNamespace = "http://localhost:8084/Module31/Calculator")
+    @WebService(targetNamespace = "http://localhost:8084/Module3Activity1/Calculator")
             
         interface CalculatorInterface {
         

@@ -13,10 +13,14 @@ import javax.xml.ws.Endpoint;
  * @author Olivier
  */
 public class CalculatorImpl {
-            public static void main(String... args) throws IOException{
-        Endpoint ep = Endpoint.publish("http://localhost:9090/Calculator", new Calculator());
+
+
+    public static void main(String... args) throws IOException {
+        Endpoint ep = Endpoint.publish("http://localhost:9090/Calculator", new CalculatorWebService());
         System.out.println("Hit enter to quit");
         System.in.read();
         ep.stop();
-        }
+
+    }
+
 }
